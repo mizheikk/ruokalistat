@@ -1,0 +1,12 @@
+.ruokalat {
+	margin-top:20px;
+	margin-bottom:20px;
+	height:50px;
+}
+.ruokalista button, .ruokalista button:hover {
+  float:right;
+}
+.paivamaara h2{
+	display: inline;
+	padding: 20px;
+}
