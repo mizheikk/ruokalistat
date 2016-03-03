@@ -44,7 +44,7 @@ $( document ).ready(function() {
 			makeList(ravintolat);
 		}	else {
 			$.ajax({
-				url: "https://messi.hyyravintolat.fi/publicapi/restaurants"
+				url: "http://messi.hyyravintolat.fi/publicapi/restaurants"
 			}).done(function(res) {
 				var data = JSON.stringify(res);
 				localStorage.setItem("ravintolat",data);
@@ -77,7 +77,7 @@ $( document ).ready(function() {
 				uiElements();
 		} else {
 			$.ajax({
-					url: "https://messi.hyyravintolat.fi/publicapi/restaurant/"+id
+					url: "http://messi.hyyravintolat.fi/publicapi/restaurant/"+id
 				}).done(function(res) {
 					//luodaan uusi ominaisuus timestamp
 					res.timestamp = Date.now();
